@@ -6,7 +6,7 @@
 
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:4000'; // must match JSON server port
+const API_BASE_URL = 'https://reactisi-1.onrender.com'; // must match JSON server port
 
 export const fetchProducts = async () => {
   const response = await axios.get(`${API_BASE_URL}/products`);
@@ -17,3 +17,4 @@ export const fetchProductById = async (id) => {
   const response = await axios.get(`${API_BASE_URL}/products/${id}`);
   return response.data;
 };
+
